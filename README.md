@@ -1,2 +1,2 @@
-# azure-bicep-training
-Training notes
+# Azure Bicep Training
+[Training notes](NOTES.md)
