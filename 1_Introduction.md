@@ -79,7 +79,7 @@ Infrastructure as code, sometimes referred to as IaC, is the process of provisio
     - better support for modularity, reusable code and type safety
 - Benefits
     - **simpler syntax**
-        - reference paramters and variables directly without using complicated functions
+        - reference parameters and variables directly without using complicated functions
         - string interpolation is used
         - reference properties of a resource directly by using its symbolic name
     - **modules**: break down complex template deployments into smaller module files and reference them in a main template to provide easier management and greater reusability
@@ -125,5 +125,5 @@ Infrastructure as code, sometimes referred to as IaC, is the process of provisio
     - **Easy transition from JSON**: not a difficult process to transition to using Bicep when already using a declarative template language, you can use Bicep CLI to decompile any ARM template into a Bicep template
         - `bicep decompile`
 - When not to use Bicep
-    - Existing tool set: sometimes it makes sense to use existing financial/knowledge investments when you consider adopting a new process
-    - Multi-cloud: other Cloud providers don't support Bicep as a template language, open-source tools like Terraform can be used for multi-cloud deployments
+    - **Existing tool set**: sometimes it makes sense to use existing financial/knowledge investments when you consider adopting a new process
+    - **Multi-cloud**: other Cloud providers don't support Bicep as a template language, open-source tools like Terraform can be used for multi-cloud deployments
