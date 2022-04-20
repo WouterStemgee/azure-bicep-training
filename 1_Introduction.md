@@ -71,7 +71,7 @@ Infrastructure as code, sometimes referred to as IaC, is the process of provisio
 
 
 ### 1.3 What is Bicep? How does it fits into an infrastructure as code approach?
-- Bicep is a Resource Manager template language that's used to declaratibely deploy Azure resources. 
+- Bicep is a Resource Manager template language that's used to declaratively deploy Azure resources. 
     - it is a **domain specific language** (DSL) designed for a specific domain and not meant to be used as a standard programming language
         - only used to create Resource Manager templates
     - the syntax is intended to be easy to understand and straightforward to learn
