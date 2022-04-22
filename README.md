@@ -6,7 +6,7 @@ Source: https://docs.microsoft.com/en-gb/events/learntv/learnlive-iac-and-bicep/
 ### 1.2 Difference between declarative and imperative infrastructure as code
 ### 1.3 What is Bicep? How does it fits into an infrastructure as code approach?
 
-## 2. Build your first Bicep template
+## [2. Build your first Bicep template](2_Bicep-templates.md)
 ### 2.1 Create and deploy Azure resources by using Bicep
 ### 2.2 Add flexibility to your templates by using parameters, variables, and expressions
 ### 2.3 Create and deploy a Bicep template that includes modules

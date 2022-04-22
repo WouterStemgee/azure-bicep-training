@@ -1,7 +1,7 @@
 ## 1. Introduction to infrastructure as code using Bicep
 Infrastructure as code, sometimes referred to as IaC, is the process of provisioning infrastructure resources similar to how software is deployed.
 
-![](assets/iac_template.png)
+![](assets/iac-template.png)
 
 ### 1.1 Benefits of infrastructure as code
 - Increase confidence in deployments
