@@ -111,7 +111,7 @@ Infrastructure as code, sometimes referred to as IaC, is the process of provisio
     output storageAccountId string = storageAccount.id
     ```
 - How Bicep works: transpilation of Bicep template to JSON template
-    ![](assets/bicep-to-json.png)
+    - ![](assets/bicep-to-json.png)
     - Deploy the Bicep template to the resource group named 'storage-resource-group':
         - `az deployment group create --template-file ./main.bicep --resource-group storage-resource-group`
     - View the JSON template that is submitted to the Resource Manager:
