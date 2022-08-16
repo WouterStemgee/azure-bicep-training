@@ -91,7 +91,7 @@
     - the main Bicep template can reference these modules
     - behind the scenes, modules are transpiled into a single JSON template for deployment
     - makes Bicep code more reusable
-    - ![](assets\bicep-templates-modules.png)
+    - ![](assets/bicep-templates-modules.png)
     - defining a module
         - ```bicep
             module myModule 'modules/mymodule.bicep' = {
