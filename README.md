@@ -1,5 +1,5 @@
 # Use Bicep to deploy your Azure infrastructure as code
-Source: https://docs.microsoft.com/en-gb/events/learntv/learnlive-iac-and-bicep/
+Source: https://docs.microsoft.com/en-gb/events/learn-events/learnlive-iac-and-bicep/
 
 ## [1. Introduction to infrastructure as code using Bicep](1_Introduction.md)
 ### 1.1 Benefits of infrastructure as code
