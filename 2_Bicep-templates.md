@@ -74,15 +74,15 @@
                 - note: sometimes the `uniqueString()` function will create strings that start with a number, some Azure resources, like storage accounts, don't allow their names to start with numbers, this means it's a good idea to use string interpolation to create resource names
             - Selectiing SKUs for resources:
                 - ```bicep
-                    @allowed([
-                    'nonprod'
-                    'prod'
-                    ])
-                    param environmentType string
+                  @allowed([
+                      'nonprod'
+                      'prod'
+                  ])
+                  param environmentType string
                   ```
                 - ```bicep
-                    var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-                    var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
+                  var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
+                  var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
                   ```
 
 ### 2.3 Create and deploy a Bicep template that includes modules
@@ -94,12 +94,12 @@
     - ![](assets/bicep-templates-modules.png)
     - defining a module
         - ```bicep
-            module myModule 'modules/mymodule.bicep' = {
-                name: 'MyModule'
-                params: {
-                    location: location
-                }
-            }
+          module myModule 'modules/mymodule.bicep' = {
+              name: 'MyModule'
+              params: {
+                  location: location
+              }
+          }
           ```
             - `module`: tells Bicep you're about to use another Bicep file as a module
             - `<symbolic name>`: use the symbolic name when you refer to the module's outputs in other parts of the template
