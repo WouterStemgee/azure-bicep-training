@@ -23,7 +23,7 @@
         - `name`: the name the resource will be assigned in Azure
         - other details: location, SKU (pricing tier), kind
         - properties: can be different depending on the API version
-- Resource dependencies: implicit dependency, Bicep will first deploy the plan before it deploys the app
+- Resource dependencies: **implicit dependency**, Bicep will first deploy the plan before it deploys the app
     ```bicep
     resource appServicePlan 'Microsoft.Web/serverFarms@2021-03-01' = {
         name: 'toy-product-launch-plan'
@@ -66,4 +66,20 @@
     - Combined strings
     - Selectiing SKUs for resources
 
-### 2.3 Create and deploy a Bicep template that includes modulesa
+### 2.3 Create and deploy a Bicep template that includes modules
+- **Group related resources by using modules**
+    - create individual Bicep files, called modules, for different parts of your deployment
+    - the main Bicep template can reference these modules
+    - behind the scenes, modules are transpiled into a single JSON template for deployment
+    - makes Bicep code more reusable
+- **Outputs**
+    - a way for your Bicep code to send data back to whoever or whatever started the deployment
+    - example use-cases: 
+        - return the public IP address so you can SSH into the created machine
+        - composed name of the app the template has deployed so it can be used within a deployment pipeline to publish the application binaries
+    - code: `output appServiceAppName string = appServiceAppName`
+        - `output`: tells Bicep you're defining an output.
+        - `appServiceAppName`: name of the output, when someone deploys the template successfully, the output values will include the name you specified so they can access the values they're expecting
+        - `string`: type of the output, outputs support the same types as parameters
+    - note: a value must be specified for each output, unlike parameters, outputs always need to have values
+        - output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file
