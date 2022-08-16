@@ -11,7 +11,7 @@ Source: https://docs.microsoft.com/en-gb/events/learntv/learnlive-iac-and-bicep/
 ### 2.2 Add flexibility to your templates by using parameters, variables, and expressions
 ### 2.3 Create and deploy a Bicep template that includes modules
 
-## 3. Build reusable Bicep templates by using parameters
+## [3. Build reusable Bicep templates by using parameters](3_Bicep-parameters.md)
 ### 3.1 Customize parameters and limit the values that can be used by each parameter
 ### 3.2 Ways that parameters can be supplied to a Bicep template deployment
 ### 3.3 Work with secure parameters
